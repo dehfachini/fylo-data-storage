@@ -1,7 +1,6 @@
 body {
     background-color: hsl(229, 57%, 11%);
     font-family: raleway;
-
 }
 
 .background-image {
@@ -11,47 +10,65 @@ body {
     background-position: center bottom;
     background-size: auto;
     position: relative;
-
 }
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
    
-
-.progress-bar-container {
-    color: white;
-    width: 300px;
-    height: 100px;
-
     
 }
 
-.container {
-
-}
-
 .logo-container {
-    width: 280px;
-    height: 120px;
+    width: 300px;
+    height: 160px;
     background-color: hsl(228, 56%, 26%);
     border-radius: 5px 70px 5px 5px;
 }
 
 .icons {
-    display: flex;  
-    justify-content: space-evenly;
-    width: 180px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 15px;
 }
 
-
-
-.one-icon{
+.one-icon {
     height: 25px;
     width: 25px;
-    background-color: black;
+    background-color: hsl(229, 57%, 11%);
     padding: 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-   
 
+.inside-logo-container {
+    padding: 30px 40px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.progress-bar-container {
+    color: white;
+    width: 500px;
+    height: 100px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 30px;
+}
+
+.inside-progress-bar-container {
+    padding: 15px;
+}
+
+span {
+    font-weight: bolder;
+}
