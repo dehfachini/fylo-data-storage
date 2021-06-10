@@ -9,20 +9,36 @@ body {
     overflow: hidden;
 }
 
+/* Container */
+
 .container {
     display: flex;
     width: 100vw;
     height: 80vh;
     align-items: center;
     justify-content: center;
-  
 }
+
+.inner-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Logo container */
 
 .logo-container {
     width: 300px;
     height: 160px;
     background-color: hsl(228, 56%, 26%);
     border-radius: 7px 70px 7px 7px;
+}
+
+.inside-logo-container {
+    padding: 30px 40px;
+}
+
+.logo img {
+    width: 120px;
 }
 
 .icons {
@@ -43,76 +59,7 @@ body {
     justify-content: center;
 }
 
-.inside-logo-container {
-    padding: 30px 40px;
-}
-
-.logo img {
-    width: 120px;
-}
-
-.progress-bar-container {
-    color: white;
-    width: 500px;
-    height: 130px;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: 7px;
-    margin-left: 30px;
-    font-size: 14px;
-}
-
-.inside-progress-bar-container {
-    padding: 30px;
-}
-
-.main-text span {
-    font-weight: bolder;
-}
-
-.inner-container {
-    display: flex;
-    align-items: flex-end;
-}
-
-progress {
-    width: 100%;
-    display: block;
-    /* default: inline-block */
-    margin: 1em 0 0.2em 0;
-    padding: 3px;
-    border: 0 none;
-    background: hsl(229, 57%, 11%);
-    border-radius: 14px;
-}
-
-progress::-moz-progress-bar {
-    border-radius: 12px;
-    background: orange;
-}
-
-/* webkit */
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    progress {
-        height: 18px;
-    }
-}
-
-progress::-webkit-progress-bar {
-    background: transparent;
-}
-
-progress::-webkit-progress-value {
-    border-radius: 12px;
-    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-}
-
-.capacity {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bolder;
-    height: 30px;
-}
+/*  Tooltip */
 
 .tooltip:before {
     content: '';
@@ -142,6 +89,15 @@ progress::-webkit-progress-value {
     top: -45px;
 }
 
+.tooltip span {
+    font-weight: bolder;
+    font-size: 35px;
+    margin-right: 10px;
+    color: black;
+}
+
+/* Progress bar */
+
 .big-progress-bar {
     display: flex;
     flex-direction: column;
@@ -149,11 +105,52 @@ progress::-webkit-progress-value {
     position: relative;
 }
 
-.tooltip span {
+.progress-bar-container {
+    color: white;
+    width: 500px;
+    height: 130px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 7px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.inside-progress-bar-container {
+    padding: 30px;
+}
+
+.main-text span {
     font-weight: bolder;
-    font-size: 35px;
-    margin-right: 10px;
-    color: black;
+}
+
+progress {
+    width: 100%;
+    display: block;
+    /* default: inline-block */
+    margin: 1em 0 0.2em 0;
+    padding: 3px;
+    border: 0 none;
+    background: hsl(229, 57%, 11%);
+    border-radius: 14px;
+}
+
+.progress-bar {
+    position: relative;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+        height: 18px;
+    }
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 12px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
 
 .circle {
@@ -166,6 +163,40 @@ progress::-webkit-progress-value {
     top: 4px;
 }
 
-.progress-bar {
-    position: relative;
+.capacity {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    height: 30px;
+}
+
+@media (max-width: 375px) {
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .progress-bar-container {
+        width: 300px;
+        margin-left: 0;
+    }
+    .big-progress-bar {
+        margin-top: 20px;
+    }
+    .tooltip {
+        top: 100px;
+        margin-right: 80px;
+    }
+    .tooltip::before {
+        display: none;
+    }
+    .circle {
+        right: 50px;
+    }
+    body {
+        background-image: url(/images/bg-mobile.png);
+    }
+    .capacity {
+        font-size: 10px;
+    }
 }
