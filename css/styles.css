@@ -116,17 +116,16 @@ progress::-webkit-progress-value {
     height: 30px;
 }
 
-/* .tooltip:before {
+.tooltip:before {
     content: '';
     position: absolute;
-    bottom: 5px;
-    width: 2px;
-    height: 2px;
-    border-style: solid;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent white;
-    right: -15px;
-} */
+    width: 0;
+    height: 0;
+    border-top: 30px solid white;
+    border-left: 25px solid transparent;
+    bottom: -23px;
+    right: 0px;
+}
 
 .tooltip {
     width: 150px;
@@ -142,14 +141,13 @@ progress::-webkit-progress-value {
     justify-content: center;
     text-transform: uppercase;
     position: absolute;
-    top: -35px;
+    top: -45px;
 }
 
 .big-progress-bar {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     position: relative;
 }
 
@@ -158,4 +156,18 @@ progress::-webkit-progress-value {
     font-size: 35px;
     margin-right: 10px;
     color: black;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 90px;
+    top: 4px;
+}
+
+.progress-bar {
+    position: relative;
 }
