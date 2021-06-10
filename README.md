@@ -1,6 +1,6 @@
-# Frontend Mentor - Huddle Landing Page solution
+# Frontend Mentor - Fylo Data Storage Page Solution 
 
-This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo Data Storage Page Solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
 
@@ -14,7 +14,7 @@ This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](htt
 
 ### Links
 
-- Live Site URL: [github-pages](https://dehfachini.github.io/fylo-data-storage-component/)
+- Live Site URL: [github-pages](https://dehfachini.github.io/fylo-data-storage/)
 
 ## My process
 
