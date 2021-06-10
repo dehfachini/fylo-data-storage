@@ -12,15 +12,12 @@ body {
     position: relative;
 }
 
-
 .container {
     display: flex;
     width: 100vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
-   
-    
 }
 
 .logo-container {
@@ -59,16 +56,55 @@ body {
 .progress-bar-container {
     color: white;
     width: 500px;
-    height: 100px;
+    height: 130px;
     background-color: hsl(228, 56%, 26%);
     border-radius: 5px 5px 5px 5px;
     margin-left: 30px;
+    font-size: 14px;
 }
 
 .inside-progress-bar-container {
-    padding: 15px;
+    padding: 30px;
 }
 
 span {
     font-weight: bolder;
+}
+
+.inner-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+progress {
+    width: 100%;
+    display: block;
+    /* default: inline-block */
+    margin: 1em auto;
+    padding: 3px;
+    border: 0 none;
+    background: hsl(229, 57%, 11%);
+    border-radius: 14px;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 12px;
+    background: orange;
+}
+
+/* webkit */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+        height: 18px;
+    }
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 12px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
