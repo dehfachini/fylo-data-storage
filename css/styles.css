@@ -1,23 +1,21 @@
 body {
     background-color: hsl(229, 57%, 11%);
     font-family: raleway;
-}
-
-.background-image {
     background-image: url(/images/bg-desktop.png);
     background-repeat: no-repeat;
-    height: 100vh;
-    background-position: center bottom;
-    background-size: auto;
-    position: relative;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-position: bottom;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
+  
 }
 
 .logo-container {
